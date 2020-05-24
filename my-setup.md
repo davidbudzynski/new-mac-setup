@@ -80,3 +80,20 @@ they should get installed automatically by signing into browsers' accounts but h
 | File Icon for GitHub and GitLab | different filetypes different icons to GitHub                                        |
 | Octotree                        | tree file for GitHub                                                                 |
 | Save to Pocket                  | bookmark manager                                                                     |
+
+### **Some of these extensions require some initial setup**
+
+#### Medium Unlimited
+
+follow instructions for your browser [here](https://github.com/manojVivek/medium-unlimited)
+
+#### Stylus
+
+I primarily use this extension to set dark mode for GitHub but it can be used for any other website. Most of them can be found of [this page](https://userstyles.org/) - it's quite slow though.
+
+To set github dark mode follow [these instructions](https://github.com/StylishThemes/GitHub-Dark)
+
+
+#### Tablis
+
+I set it so it loads a new photo with every new tab, set the time to 24-hour digital with minutes and date. Finally, I set the time and date font to Monaco.
