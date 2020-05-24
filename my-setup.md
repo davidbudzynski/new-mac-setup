@@ -57,3 +57,26 @@ brew update
 | The Unarchiver              | for unzipping files                                                                        |
 | Time Out                    | break reminder                                                                             |
 | Zotero                      | reference manager                                                                          |
+
+## Browser extensions
+
+they should get installed automatically by signing into browsers' accounts but here's the list of extensions that I use
+
+| Extension                       | Functionality                                                                        |
+| ------------------------------- | ------------------------------------------------------------------------------------ |
+| 1 Password X                    | password manager                                                                     |
+| HTTPS Everywhere                | automatically use HTTPS                                                              |
+| Medium Unlimited                | for access to Towards Data Science and other Medium articles                         |
+| OneTab                          | saves all of your open tabs into one tab with links to those pages                   |
+| Privacy Badger                  | blocks from trackers                                                                 |
+| React Developer Tools           | adds React debugging                                                                 |
+| Redux DevTools                  | Redux debugging                                                                      |
+| Stylus                          | allows to load in custom css styles for any page                                     |
+| Tabliss                         | beautiful new tab page                                                               |
+| The Camelizer                   | track Amazon price data                                                              |
+| uBlock Origin                   | ad blocker                                                                           |
+| Automatic 4K/HD for Youtube     | set default resolution to 4K                                                         |
+| Enhanced GitHub                 | Display repo size, size of each file, download link and option to copy file contents |
+| File Icon for GitHub and GitLab | different filetypes different icons to GitHub                                        |
+| Octotree                        | tree file for GitHub                                                                 |
+| Save to Pocket                  | bookmark manager                                                                     |
