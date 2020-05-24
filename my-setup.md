@@ -1,5 +1,11 @@
 # Setting up macOS for web development and data science
 
+## Install Command Line Tools
+
+```sh
+xcode-select --install
+```
+
 ## Homebrew
 
 Instal Homebrew and and update it.
