@@ -104,3 +104,7 @@ To set github dark mode follow [these instructions](https://github.com/StylishTh
 #### Tablis
 
 I set it so it loads a new photo with every new tab, set the time to 24-hour digital with minutes and date. Finally, I set the time and date font to Monaco.
+
+## Fonts I Like
+
+Few of the fonts that I like and switch between are [SF Pro](https://developer.apple.com/fonts/), [Operator Mono](https://www.typography.com/fonts/operator/styles), and [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro).
