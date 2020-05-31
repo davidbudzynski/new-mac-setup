@@ -10,7 +10,7 @@ xcode-select --install
 
 Instal Homebrew and and update it.
 
-``` sh
+```sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
@@ -27,6 +27,8 @@ brew update
 | Git        | version control            |
 | PostgreSQL | relational database        |
 | MongoDB    | non-relational database    |
+
+Note: Do not install R through homebrew. It won't work.
 
 | app                         | purpose                                                                                    |
 | --------------------------- | ------------------------------------------------------------------------------------------ |
@@ -98,7 +100,6 @@ follow instructions for your browser [here](https://github.com/manojVivek/medium
 I primarily use this extension to set dark mode for GitHub but it can be used for any other website. Most of them can be found of [this page](https://userstyles.org/) - it's quite slow though.
 
 To set github dark mode follow [these instructions](https://github.com/StylishThemes/GitHub-Dark)
-
 
 #### Tablis
 
