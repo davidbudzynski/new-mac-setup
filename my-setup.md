@@ -28,7 +28,7 @@ brew update
 | PostgreSQL | relational database        |
 | MongoDB    | non-relational database    |
 
-Note: Do not install R through homebrew. It won't work.
+**Note:** Do not install R through homebrew because X11 (whatever this is) won't work. You have to install it by downloading the download file from official website.
 
 | app                         | purpose                                                                                    |
 | --------------------------- | ------------------------------------------------------------------------------------------ |
