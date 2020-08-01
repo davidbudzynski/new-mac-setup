@@ -1,0 +1,103 @@
+#+TITLE: My Setup
+* Setting up MacOS for web development and data science
+
+** Install CLI tools
+
+#+BEGIN_SRC sh
+xcode-select --install
+#+END_SRC
+
+** Homebrew
+
+Install Homebrew and check for updates
+
+#+BEGIN_SRC sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#+END_SRC
+
+#+BEGIN_SRC sh
+brew update
+#+END_SRC
+
+** Install development tools
+
+| Item       | Purpose                                     |
+|------------+---------------------------------------------|
+| R          | data science                                |
+| Java       | required for compilation of some R packages |
+| Git        | version control                             |
+| PostgreSQL | relational database                         |
+| MongoDB    | non-relational database                     |
+
+/Note/: *DO NOT* try to install R via Homebrew because X11 won't work and you will come across all sorts of problems. You need to go to the official web site for the download.
+
+
+** Install all the apps
+
+| App                       | Purpose                                                                         |
+|---------------------------+---------------------------------------------------------------------------------|
+| Emacs                     | IDE, todo lists, everything code oriented                                       |
+| RStudio                   | IDE for R development                                                           |
+| Visual Studio Code        | text editor                                                                     |
+| Vim                       | lightweight text editor                                                         |
+| Firefox                   | web                                                                             |
+| Google Chrome             | web                                                                             |
+| Rectangle                 | window management                                                               |
+| iTerm2                    | terminal                                                                        |
+| Docker                    | containers                                                                      |
+| VLC                       | media player                                                                    |
+| Spotify                   | music                                                                           |
+| Alfred                    | spotlight search replacement                                                    |
+| 1Password                 | password manager                                                                |
+| Amphetamine               | stops a mac from going to sleep                                                 |
+| AppCleaner                | removes installed apps and their files if you install something not via the CLI |
+| Bartender 3               | keeps the top menu bar organized                                                |
+| Discord                   | communication                                                                   |
+| draw.io                   | good-looking charts and diagrams                                                |
+| Figma                     | design                                                                          |
+| handbrake                 | video conversion                                                                |
+| karabiner elements        | changes key bindings on keyboards (handy for non-mac ones)                      |
+| Native Display Brightness | makes it possible to change brightness levels on non-apple from your keyboard   |
+| PDF expert                | reading and editing PDFs                                                        |
+| Postman                   | testing APIs                                                                    |
+| qBittorrent               | torrent client                                                                  |
+| The Unarchiver            | zipping/unzipping files                                                         |
+| Time Out                  | break reminder                                                                  |
+| Zotero                    | reference manager                                                               |
+
+
+*** TODO Emacs setup
+*** TODO Vim setup
+*** TODO iTerm2 setup
+
+** Browser extensions
+
+Normally, they should get installed automatically by signing into browsers' accounts by here's the list of extensions that I use.
+
+| Extenision            | Functionality                                                                        |
+|-----------------------+--------------------------------------------------------------------------------------|
+| 1 Password X          | password manager                                                                     |
+| OneTab                | saves all of your open tabs into one tab with links to those pages                   |
+| Privacy Badger        | Blocks trackers on websites                                                          |
+| HTTPS everythwere     | enforce https connections                                                            |
+| Medium Unlimited      | for access to some articles on Medium and Towards Data Science                       |
+| React Developer Tools | React debugging                                                                      |
+| Redux DevTools        | Redux debugging                                                                      |
+| Tabliss               | Beautiful startup and new page                                                       |
+| The Camelizer         | track Amazon price data                                                              |
+| uBlock Origin         | ad blocker                                                                           |
+| Enhanced Github       | Display repo size, size of each file, download link and option to copy file contents |
+| Save to Pocket        | bookmark manager                                                                     |
+
+*** Some of these extensions require initial setup
+**** Medium Unlimited
+follow instructions for your browser [[https://github.com/manojVivek/medium-unlimited][here]]
+**** Tabliss
+I set it so it loads a new photo with every new tab, set the time to 24-hour digital with minutes and date. Finally, I set the time and date font to Monaco.
+
+** Fonts I Like
+The fonts that I use in my IDEs and often switch between are:
++ San Francisco Pro
++ Operator Mono
++ Anonumous Pro
++ IBM Plex Mono (my current favourite)
