@@ -67,8 +67,12 @@ brew update
 
 
 *** TODO Emacs setup
+I use DOOM Emacs distribution, see my dotfiles for my config
 *** TODO Vim setup
+Although I don't use it often, I like having it set up the way I like it. Config available in my dofiles.
 *** TODO iTerm2 setup
+1. Change the default theme
+2. Enable natural language editing (jumping words with option and arrows, etc.)
 
 ** Browser extensions
 
