@@ -25,12 +25,21 @@ brew update
 |------------+---------------------------------------------|
 | R          | data science                                |
 | Java       | required for compilation of some R packages |
+| Vim        | text editor                                 |
 | Git        | version control                             |
 | PostgreSQL | relational database                         |
 | MongoDB    | non-relational database                     |
 
 /Note/: *DO NOT* try to install R via Homebrew because X11 won't work and you will come across all sorts of problems. You need to go to the official web site for the download.
 
+#+BEGIN_SRC sh
+brew install \
+    git \
+    make \
+    vim \
+    # postgresql # this one requires some extra steps: see the docs
+
+#+END_SRC
 
 ** Install all the apps
 
@@ -39,11 +48,11 @@ brew update
 | Emacs                     | IDE, todo lists, everything code oriented                                       |
 | RStudio                   | IDE for R development                                                           |
 | Visual Studio Code        | text editor                                                                     |
-| Vim                       | lightweight text editor                                                         |
 | Firefox                   | web                                                                             |
 | Google Chrome             | web                                                                             |
 | Rectangle                 | window management                                                               |
-| iTerm2                    | terminal                                                                        |
+| iTerm2                    | terminal emulator                                                               |
+| Alacritty                 | the fastest terminal emulator                                                   |
 | Docker                    | containers                                                                      |
 | VLC                       | media player                                                                    |
 | Spotify                   | music                                                                           |
@@ -51,7 +60,7 @@ brew update
 | 1Password                 | password manager                                                                |
 | Amphetamine               | stops a mac from going to sleep                                                 |
 | AppCleaner                | removes installed apps and their files if you install something not via the CLI |
-| Bartender 3               | keeps the top menu bar organized                                                |
+| Bartender 3 or dozer      | keeps the top menu bar organized                                                |
 | Discord                   | communication                                                                   |
 | draw.io                   | good-looking charts and diagrams                                                |
 | Figma                     | design                                                                          |
@@ -65,6 +74,32 @@ brew update
 | Time Out                  | break reminder                                                                  |
 | Zotero                    | reference manager                                                               |
 
+#+BEGIN_SRC sh
+brew cask install \
+    emacs \
+    rstudio \
+    google-chrome \
+    rectangle \
+    iterm2 \
+    alacritty \
+    vlc \
+    spotify \
+    alfred \
+    1password \
+    appcleaner \
+    # bartender \
+    discord \
+    draw.io \
+    figma \
+    hanbrake \
+    karabiner-elements \
+    # pdf-expert \
+    postman \
+    qbittorrent \
+    the-unarchiver \
+    time-out \
+    zotero
+#+END_SRC
 
 *** TODO Emacs setup
 I use DOOM Emacs distribution, see my dotfiles for my config
