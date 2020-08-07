@@ -1,6 +1,11 @@
 #+TITLE: My Setup
 * Setting up MacOS for web development and data science
 
+I have to set up my macs quite often. I created this document so it is easier for me to do so. This guide get updated from time to time, depending on what tools I use and what technology I am working with at the moment.
+
+** Getting started
+
+Once you go through the setup assistant when you turn the computer for the first time, update MacOS to get the lastest security updates and patches.
 ** Install CLI tools
 
 #+BEGIN_SRC sh
