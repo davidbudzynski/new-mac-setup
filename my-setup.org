@@ -1,11 +1,11 @@
 #+TITLE: My Setup
 * Setting up MacOS for web development and data science
 
-I have to set up my macs quite often. I created this document so it is easier for me to do so. This guide get updated from time to time, depending on what tools I use and what technology I am working with at the moment.
+I often have to set up my macs often. I created this document so it is easier for me to do so. This guide get updated from time to time, depending on what tools I use and what technology I am working with at the moment.
 
 ** Getting started
 
-Once you go through the setup assistant when you turn the computer for the first time, update MacOS to get the lastest security updates and patches.
+Once you go through the setup assistant when you turn the computer for the first time, update MacOS to get the latest security updates and patches.
 ** Install CLI tools
 
 #+BEGIN_SRC sh
@@ -14,7 +14,7 @@ xcode-select --install
 
 ** Homebrew
 
-Install Homebrew and check for updates
+Homebrew is a package manager, it allows you to install almost any app from the command line. Install Homebrew and check for updates.
 
 #+BEGIN_SRC sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -26,27 +26,32 @@ brew update
 
 ** Install development tools
 
-| Item       | Purpose                                     |
-|------------+---------------------------------------------|
-| R          | data science                                |
-| Java       | required for compilation of some R packages |
-| Vim        | text editor                                 |
-| Git        | version control                             |
-| PostgreSQL | relational database                         |
-| MongoDB    | non-relational database                     |
+| Item       | Purpose                                              |
+|------------+------------------------------------------------------|
+| R          | data science                                         |
+| Java       | required for compilation of some R packages          |
+| Vim        | text editor                                          |
+| Git        | version control                                      |
+| PostgreSQL | relational database ([[https://wiki.postgresql.org/wiki/Homebrew][instalation and setup docs]])     |
+| MongoDB    | non-relational database ([[https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/][instalation and setup docs]]) |
+| tmux       | terminal multiplexer                                 |
 
-/Note/: *DO NOT* try to install R via Homebrew because X11 won't work and you will come across all sorts of problems. You need to go to the official web site for the download.
+/Note/ *DO NOT* try to install R via Homebrew because X11 won't work and you will come across all sorts of problems. You need to go to [[https://www.r-project.org/][the official web site]] for the download.
 
 #+BEGIN_SRC sh
 brew install \
     git \
     make \
     vim \
-    # postgresql # this one requires some extra steps: see the docs
-
+    tmux \
+    postgresql && # this one requires some extra steps: see the docs
+    brew tap mongodb/brew &&
+    brew install mongodb-community
 #+END_SRC
 
-** Install all the apps
+** Install apps
+
+Here are programs that I install. I try to stick to free and open source software as much as I can.
 
 | App                       | Purpose                                                                         |
 |---------------------------+---------------------------------------------------------------------------------|
@@ -106,13 +111,51 @@ brew cask install \
     zotero
 #+END_SRC
 
-*** TODO Emacs setup
-I use DOOM Emacs distribution, see my dotfiles for my config
-*** TODO Vim setup
+*** App setup
+**** Emacs
+I use DOOM Emacs distribution since it was created for Vim refugees like me and it comes with sensible defaults and requires minimal amount of tweaking before it can be usable. Its creator is very active on Discord, where you can learn everything related to Emacs. I have my own dotfiles for doom emacs that I copy over to every new computer.
+**** Vim
 Although I don't use it often, I like having it set up the way I like it. Config available in my dofiles.
-*** TODO iTerm2 setup
-1. Change the default theme
+**** iTerm2
+1. Change the default theme if I feel like having light theme for a change.
 2. Enable natural language editing (jumping words with option and arrows, etc.)
+**** Alacritty
+Very fast, GPU accelerated terminal emulator. It is minimal and doesn't even come with GUI settings section. For the settings, go see my dotfiles.
+
+** Shell
+Since macOS Catalina, zsh is the default shell. For easy setup, install *Oh My ZSH*.
+
+#+BEGIN_SRC sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#+END_SRC
+
+I think it doesn't really provide anything you couldn't achieve with a little of manual labor:
+ + spaceship prompt
+ + custom plugins
+
+** Node.js
+
+Use Node Version Manager (NVM) to install and manage different versions of Node.
+
+installing the NVM
+
+#+BEGIN_SRC sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+#+END_SRC
+
+Making sure it loads in your terminal
+
+#+BEGIN_SRC sh
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+#+END_SRC
+
+
+getting the latest version of node
+
+#+BEGIN_SRC sh
+nvm install node
+#+END_SRC
 
 ** Browser extensions
 
