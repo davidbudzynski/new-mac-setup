@@ -6,6 +6,7 @@ I often have to set up my macs often. I created this document so it is easier fo
 ** Getting started
 
 Once you go through the setup assistant when you turn the computer for the first time, update MacOS to get the latest security updates and patches.
+
 ** Install CLI tools
 
 #+BEGIN_SRC sh
@@ -26,15 +27,15 @@ brew update
 
 ** Install development tools
 
-| Item       | Purpose                                              |
-|------------+------------------------------------------------------|
-| R          | data science                                         |
-| Java       | required for compilation of some R packages          |
-| Vim        | text editor                                          |
-| Git        | version control                                      |
-| PostgreSQL | relational database ([[https://wiki.postgresql.org/wiki/Homebrew][instalation and setup docs]])     |
-| MongoDB    | non-relational database ([[https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/][instalation and setup docs]]) |
-| tmux       | terminal multiplexer                                 |
+| Item           | Purpose                                              |
+|----------------+------------------------------------------------------|
+| R              | data science                                         |
+| Java           | required for compilation of some R packages          |
+| Vim            | text editor                                          |
+| Git            | version control                                      |
+| PostgreSQL     | relational database ([[https://wiki.postgresql.org/wiki/Homebrew][instalation and setup docs]])     |
+| MongoDB        | non-relational database ([[https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/][instalation and setup docs]]) |
+| tmux           | terminal multiplexer                                 |
 
 /Note/ *DO NOT* try to install R via Homebrew because X11 won't work and you will come across all sorts of problems. You need to go to [[https://www.r-project.org/][the official web site]] for the download.
 
@@ -49,9 +50,16 @@ brew install \
     brew install mongodb-community
 #+END_SRC
 
+For documentation and reporting, I need a LaTeX distribution and a reliable way to generate mutiple document types (.pdf, .odt, .docx etc.). On mac, MacTeX is the full distribution (it's around 8GB). I install it by running ~brew cask install mactex-no-gui~. I rely on Pandoc for document conversion. After installing MacTeX i run:
+
+#+BEGIN_SRC shell
+brew install \
+    pandoc-citeproc # this includes pandoc's citation parser
+#+END_SRC
+
 ** Install apps
 
-Here are programs that I install. I try to stick to free and open source software as much as I can.
+Here are the programs that I install. I try to stick to free and open source software as much as I can, or the best working software for my use cases.
 
 | App                       | Purpose                                                                         |
 |---------------------------+---------------------------------------------------------------------------------|
@@ -62,10 +70,9 @@ Here are programs that I install. I try to stick to free and open source softwar
 | Google Chrome             | web                                                                             |
 | Rectangle                 | window management                                                               |
 | iTerm2                    | terminal emulator                                                               |
-| Alacritty                 | the fastest terminal emulator                                                   |
+| Alacritty                 | faster terminal emulator                                                        |
 | Docker                    | containers                                                                      |
 | VLC                       | media player                                                                    |
-| Spotify                   | music                                                                           |
 | Alfred                    | spotlight search replacement                                                    |
 | 1Password                 | password manager                                                                |
 | Amphetamine               | stops a mac from going to sleep                                                 |
@@ -83,6 +90,7 @@ Here are programs that I install. I try to stick to free and open source softwar
 | The Unarchiver            | zipping/unzipping files                                                         |
 | Time Out                  | break reminder                                                                  |
 | Zotero                    | reference manager                                                               |
+| MS Teams                  | work communication                                                              |
 
 #+BEGIN_SRC sh
 brew cask install \
@@ -131,7 +139,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 I think it doesn't really provide anything you couldn't achieve with a little of manual labor:
  + spaceship prompt
- + custom plugins
+ + custom plugins / aliases
 
 ** Node.js
 
@@ -187,4 +195,5 @@ The fonts that I use in my IDEs and often switch between are:
 + San Francisco Pro
 + Operator Mono
 + Anonumous Pro
-+ IBM Plex Mono (my current favourite)
++ IBM Plex Mono
++ Monaco (my current favorite)
