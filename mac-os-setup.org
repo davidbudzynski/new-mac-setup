@@ -129,3 +129,9 @@ defaults write com.apple.finder AppleShowAllFiles YES
 #+BEGIN_SRC sh
 xcode-select --install
 #+END_SRC
+
+* XQuartz
+
+#+BEGIN_SRC shell
+brew install xquartz
+#+END_SRC
