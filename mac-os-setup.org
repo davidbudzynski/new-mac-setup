@@ -9,3 +9,117 @@ This guide covers how I set up a brand new Mac for software development. It was 
 * Getting started
 
 The setup assistant will launch when you turn your computer on for the first time. Enter your language, time zone, Apple ID etc. Right after that, you should go to: *Apple menu > About This Mac > Software Update*. This will update your system and you will get the latest security patches.
+
+* System preferences
+
+I like tweaking system preferences so the system behaves exactly the way I want it. Consider all of those settings as optional, they are, after all, my suggestions. You can choose settings that make the most sense to you.
+
+** Desktop and Screensaver
+
+- Go to Screensaver:
+
+  + start after: never
+  + hot corners: set the bottom right hot corner: Start Screensaver
+
+** Dock
+
+- Set size to small, and magnification to somewhere in the middle. Keep the position to the bottom of the screen.
+- Prefer tabs when opening documents: *Always*
+- Check "minimize windows into application icon"
+- Check "Automatically hide and show the Dock"
+- Uncheck "Show recent applications in Dock"
+- Check show indicators for open applications
+
+** Siri
+
+- Disable Siri
+
+** Keyboard
+
+- Set Key Repeat: *Fast*
+- Set Delay Until Repeat: *Fast*
+- Go to shortcuts, click on spotlight and uncheck "show spotlight search"
+
+** Mouse
+
+- Set natural scroll direction
+- set tracking and scrolling speed to *Fast*
+
+** Sound
+
+- Check "show volume in menu bar"
+
+** Display
+
+- If you are using a MacBook, set the display scaling to *more space*. On external displays, assuming they are 4K, I set the scaling to look like 1440p
+- Set the Night Shift schedule (mine is from 20:00 to 07:00)
+
+** Date & Time
+
+- Go to clock and check:
+
+  + use a 24-hour clock
+  + show the day of the week
+  + show date
+
+** Sharing
+
+- Change your name to whatever you like. I prefer setting it to the name of the computer and the model (e.g. 2020-MacBook-Pro)
+
+** Time Machine
+
+- Set up your Time Machine backup
+
+** Security & Privacy
+
+- General
+
+    - Allow apps downloaded from App Store and identified developers
+
+- File Vault
+
+  - I recommend turning it on if you use a MacBook or want extra security
+
+- Firewall
+
+  - Turn on
+
+** Finder
+
+*** In preferences
+
+- General
+
+  - Set /New finder windows show/ to your *home directory*
+
+- Sidebar
+
+  - check your home directory
+  - Choose whatever else you want
+
+- Advanced
+
+  - check show all filename extensions
+
+*** In View
+
+- show preview
+- show tab bar
+- show path bar
+- show status bar
+
+*** View options
+
+Right click somewhere in the window:
+
+- Show view options:
+
+  - check show item info
+  - uncheck show item preview
+
+*** Show all hidden files
+
+#+BEGIN_SRC shell
+# Show hidden files
+defaults write com.apple.finder AppleShowAllFiles YES
+#+END_SRC
