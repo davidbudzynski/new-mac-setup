@@ -5,3 +5,7 @@
 [[./assets/GEORGIE-COBBS-KP0PJDYYNYU-UNSPLASH.jpeg]]
 
 This guide covers how I set up a brand new Mac for software development. It was inspired by guides and blogs by [[https://github.com/sb2nov/mac-setup][sb2nov]], [[https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/][Tania Rascia]], and many other blogs and articles out there. I created so it easier for me to set up new computers. You might find it useful when trying to do the same thing. Feel free to get in touch if you have any questions or would like to contribute to this guide.
+
+* Getting started
+
+The setup assistant will launch when you turn your computer on for the first time. Enter your language, time zone, Apple ID etc. Right after that, you should go to: *Apple menu > About This Mac > Software Update*. This will update your system and you will get the latest security patches.
