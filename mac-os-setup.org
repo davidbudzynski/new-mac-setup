@@ -137,3 +137,14 @@ Homebrew is a package manager, it allows you to install almost any app from the 
 #+BEGIN_SRC shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && brew update
 #+END_SRC
+
+* Shell
+
+Since macOS Catalina, the zsh is the default shell. For easy setup, install [[https://github.com/ohmyzsh/ohmyzsh][Oh my ZSH]].
+
+I think it doesn't really provide anything you couldn't achieve with a little of manual labor but it is great for someone who doesn't want to spend ages customizing all the details. If interested in spending extra time, look at:
+
+  - [[https://github.com/denysdovhan/spaceship-prompt][spaceship prompt]]
+  - custom plugins / aliases
+
+To get all the plugins that I usually use, go and check my dotfile repo (INCLUDE LINK TO THE REPO HERE).
