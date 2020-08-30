@@ -1,1 +1,7 @@
 #+TITLE: Mac Os Setup
+
+* Introduction
+
+[[./assets/GEORGIE-COBBS-KP0PJDYYNYU-UNSPLASH.jpeg]]
+
+This guide covers how I set up a brand new Mac for software development. It was inspired by guides and blogs by [[https://github.com/sb2nov/mac-setup][sb2nov]], [[https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/][Tania Rascia]], and many other blogs and articles out there. I created so it easier for me to set up new computers. You might find it useful when trying to do the same thing. Feel free to get in touch if you have any questions or would like to contribute to this guide.
